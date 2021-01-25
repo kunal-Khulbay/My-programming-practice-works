@@ -33,7 +33,7 @@ int main()
         printf("%d", d[i]);
     }
     k = 0;
-    int w = 0, q;
+    int w = 0;
     for (int i = m - 1, j = a - 1; i >= 0; i--, j--)
     {
         p[k] = v[i] + d[j];
@@ -42,11 +42,11 @@ int main()
         {
             w = p[k];
             p[k] = w % 10;
-            printf("\n%d\n", p[k]); // for tracing value.
+            // printf("\n%d\n", p[k]); // for tracing value.
             k++;
             w = w / 10;
             p[k] = w;
-            printf("\n%d\n", w); // for tracing value.
+            // printf("\n%d\n", w); // for tracing value.
         }
         else
         {
