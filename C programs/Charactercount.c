@@ -12,7 +12,6 @@ int main()
     int v[52], a = 0, b;
     printf("\nEnter the sentence:");
     gets(sentence);
-    printf("%d\n", strlen(sentence));
     for (int i = 0; i < 52; i++)
     {
         v[i] = 0;
